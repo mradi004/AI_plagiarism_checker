@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Plagiarism Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>AI Plagiarism Checker</h1>
+
+        <!-- TEXT CHECKER taking input form the user in the text format -->
+        <div class="box">
+            <h2>Check Text</h2>
+            
+            <label for="text">Enter Text:</label>
+            <textarea id="text" placeholder="Type or paste your content here..."></textarea>
+
+            <button onclick="sendText()">Check</button>
+        </div>
+
+        <!-- PDF CHECKER  for getting the pdf from the user -->
+        <div class="box">
+            <h2>Check PDF</h2>
+            
+            <label for="pdfFile">Choose PDF File:</label>
+            <input 
+                type="file" 
+                id="pdfFile" 
+                accept="application/pdf" 
+                title="Upload your PDF file"
+            />
+
+            <button onclick="sendPDF()">Upload</button>
+        </div>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
